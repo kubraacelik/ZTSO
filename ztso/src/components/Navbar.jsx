@@ -3,7 +3,7 @@ import "../styles/Navbar.css";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { FaSquareTwitter, FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Navbar() {
   return (
