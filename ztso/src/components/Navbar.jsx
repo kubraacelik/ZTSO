@@ -1,60 +1,78 @@
 import logo from "../assets/zonguldak-logo.png";
 import "../styles/Navbar.css";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { FaYoutubeSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Navbar() {
+
   return (
     <div className="containerDiv">
       <div className="container">
         <div className="header1">
-        <div className="header1-start">
-          <div className="top-menu">
-            <div className="top-menu-item">
-              <a href="#">Bölgemiz Hakkında</a>
-              <span className="divider">|</span>
+          <div className="header1-start">
+            <div className="top-menu">
+              <div className="top-menu-item">
+                <a href="#">Bölgemiz Hakkında</a>
+                <span className="divider">|</span>
+              </div>
+              <div className="top-menu-item">
+                <a href="#">Aidat Borcu Sorgulama</a>
+                <span className="divider">|</span>
+              </div>
+              <div className="top-menu-item">
+                <a href="#">Online İşlemler</a>
+                <span className="divider">|</span>
+              </div>
+              <div className="top-menu-item">
+                <a href="#">Üye Memnuniyet Anketi</a>
+                <span className="divider">|</span>
+              </div>
+              <div className="top-menu-item">
+                <a href="#">Kurumsal E-Posta</a>
+              </div>
             </div>
-            <div className="top-menu-item">
-              <a href="#">Aidat Borcu Sorgulama</a>
-              <span className="divider">|</span>
-            </div>
-            <div className="top-menu-item">
-              <a href="#">Online İşlemler</a>
-              <span className="divider">|</span>
-            </div>
-            <div className="top-menu-item">
-              <a href="#">Üye Memnuniyet Anketi</a>
-              <span className="divider">|</span>
-            </div>
-            <div className="top-menu-item">
-              <a href="#">Kurumsal E-Posta</a>
+            <div className="social-media">
+              <div className="social-media-list">
+                <a
+                  href="https://www.facebook.com/ztsokurumsal/"
+                  target="_blank"
+                >
+                  <FaFacebook className="social-media-icon" />
+                </a>
+              </div>
+              <div className="social-media-list">
+                <a href="https://twitter.com/ZonguldakTSO" target="_blank">
+                  <FaXTwitter className="social-media-icon" />
+                </a>
+              </div>
+              <div className="social-media-list">
+                <a
+                  href="https://www.instagram.com/ztsokurumsal/?igshid=MzRlODBiNWFlZA%3D%3D"
+                  target="_blank"
+                >
+                  <FaInstagram className="social-media-icon" />
+                </a>
+              </div>
+              <div className="social-media-list">
+                <a
+                  href="https://www.youtube.com/channel/UCfRfP2XzGNdOhYkU2TW6yyQ"
+                  target="_blank"
+                >
+                  <FaYoutubeSquare className="social-media-icon" />
+                </a>
+              </div>
             </div>
           </div>
-          <div className="social-media">
-            <div className="social-media-list">
-              <FaFacebook />
-            </div>
-            <div className="social-media-list">
-              <FaXTwitter />
-            </div>
-            <div className="social-media-list">
-              <FaInstagram />
-            </div>
-            <div className="social-media-list">
-              <FaYoutube />
+          <div className="header1-end">
+            <div className="search-main">
+              <input type="text" className="tbox-search" />
+              <a className="btn-search">
+                <i className="fa fa-search"></i>
+              </a>
             </div>
           </div>
-        </div>
-        <div className="header1-end">
-        <div className="search-main">
-            <input type="text" className="tbox-search" />
-            <a className="btn-search">
-              <i className="fa fa-search"></i>
-            </a>
-          </div>
-        </div>
         </div>
         <div className="header2">
           <div className="logoContainer">
