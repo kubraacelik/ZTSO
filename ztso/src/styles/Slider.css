@@ -1,5 +1,6 @@
 .slider {
-    height: 100vh;
+    margin-top: 10px;
+    height: 50vh;
     position: relative;
 }
 
@@ -11,6 +12,7 @@
 .slider .list .item {
     position: absolute;
     inset: 0;
+    display: flex;
     overflow: hidden;
     opacity: 0;
     transition: opacity .5s;
@@ -18,7 +20,7 @@
 
 .slider .list .item img {
     width: 760px;
-    height: 327px;
+    height: 348px;
     object-fit: cover;
 }
 
@@ -32,14 +34,13 @@
 }
 
 .slider .list .item .content {
-    position: absolute;
-    left: 50%;
-    bottom: 53%;
-    width: 50%;
-    height: 50%;
-    z-index: 1;
-    color: whitesmoke;
-    background-color: gray;
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #E5E7E9; 
+    color: black;
+    padding: 20px;
 }
 
 .slider .list .item .content p:nth-child(1) {
@@ -76,19 +77,19 @@
 
 .arrows {
     position: absolute;
-    top: 30%;
+    top: 80%;
     right: 50px;
     z-index: 100;
 }
 
 .arrows button {
-    background-color: #eee5;
+    background-color: #909497;
     border: none;
     font-family: monospace;
     width: 40px;
     height: 40px;
     border-radius: 5px;
-    font-size: x-large;
+    font-size: xx-large;
     color: #eee;
     transition: .5s;
     margin-right: 5px;
@@ -97,6 +98,6 @@
 }
 
 .arrows button:hover {
-    background-color: #eee;
+    background-color: #A6ACAF;
     color: black;
 }
