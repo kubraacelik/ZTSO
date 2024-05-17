@@ -11,58 +11,52 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    background-color: aquamarine;
 }
 
 .slide {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%; /* İki bölgeyi eşit genişlikte yapar */
     height: 100%;
     opacity: 0;
     transition: opacity .4s linear;
-    flex: 1;
+    display: flex; /* Yatay hizalamayı sağlar */
 }
 
 .active {
     opacity: 1;
 }
 
-.inner{
-    position: absolute;
+.inner {
     background-color: rgba(0, 0, 0, .8);
     color: #eee;
-    flex: 1;
     padding: 20px;
+    flex: 1;
 }
 
 .slide:nth-child(1) {
-    background: url('../assets/slider1.png') no-repeat ;
+    background: url('../assets/slider1.png') no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 50vh;
 }
+
 .slide:nth-child(2) {
-    background: url('../assets/slide2r.png') no-repeat ;
+    background: url('../assets/slider2.jpg') no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 50vh;
 }
+
 .slide:nth-child(3) {
-    background: url('../assets/slider3.png') no-repeat ;
+    background: url('../assets/slider3.jpg') no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 50vh;
 }
+
 .slide:nth-child(4) {
-    background: url('../assets/slide4r.png') no-repeat ;
+    background: url('../assets/slider4.jpg') no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 50vh;
 }
+
 .slide:nth-child(5) {
-    background: url('../assets/slider5.png') no-repeat ;
+    background: url('../assets/slider5.jpg') no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 50vh;
 }
