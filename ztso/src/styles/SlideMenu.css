@@ -1,0 +1,41 @@
+.slideMenuContainer {
+    margin-top: 15px;
+}
+
+.slideMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.slideMenu-item a{
+    text-decoration: none;
+    color: #EAEDED;
+}
+
+.slideMenu-item {
+    background-color: #005795;
+    margin: 0 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    height: 50px;
+
+    :hover {
+        transform: scale(1.04) translateY(-4px);
+    }
+
+}
