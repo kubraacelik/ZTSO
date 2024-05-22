@@ -9,7 +9,7 @@ function Tenders() {
 
   useEffect(() => {
     if (swiperInstance === null) {
-      const swiper = new Swiper(".swiper-container", {
+      const swiper = new Swiper(".tenders-swiper", {
         slidesPerView: 4,
         spaceBetween: 20,
         loop: true,
@@ -45,7 +45,7 @@ function Tenders() {
             </div>
           </div>
           <div className="tenders-end">
-            <div className="swiper-container">
+            <div className="swiper-container tenders-swiper">
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="tenders-list-element-title">

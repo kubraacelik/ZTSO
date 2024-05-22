@@ -9,7 +9,7 @@ function Classifieds() {
 
   useEffect(() => {
     if (swiperInstance === null) {
-      const swiper = new Swiper(".swiper-container", {
+      const swiper = new Swiper(".classification-swiper", {
         slidesPerView: 4,
         spaceBetween: 20,
         loop: true,
@@ -45,7 +45,7 @@ function Classifieds() {
             </div>
           </div>
           <div className="classification-end">
-            <div className="swiper-container">
+            <div className="swiper-container classification-swiper">
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="classification-list-element-title">

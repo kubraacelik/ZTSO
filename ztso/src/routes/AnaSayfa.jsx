@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 import Slider from "../components/Slider";
 import SlideMenu from "../components/SlideMenu";
 import Announcements from "../components/Announcements";
-// import Tenders from "../components/Tenders";
-// import Classifieds from "../components/Classifieds";
+import Tenders from "../components/Tenders";
+import Classifieds from "../components/Classifieds";
 
 export const AnaSayfa = () => {
   return (
@@ -13,8 +13,8 @@ export const AnaSayfa = () => {
       <Slider />
       <SlideMenu />
       <Announcements />
-      {/* <Tenders />
-      <Classifieds /> */}
+      <Tenders />
+      <Classifieds />
     </div>
   );
 };

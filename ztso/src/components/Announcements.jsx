@@ -9,7 +9,7 @@ function Announcements() {
 
   useEffect(() => {
     if (swiperInstance === null) {
-      const swiper = new Swiper(".swiper-container", {
+      const swiper = new Swiper(".announcements-swiper", {
         slidesPerView: 4,
         spaceBetween: 20,
         loop: true,
@@ -47,7 +47,7 @@ function Announcements() {
             </div>
           </div>
           <div className="announcements-end">
-            <div className="swiper-container">
+            <div className="swiper-container announcements-swiper">
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="announcements-list-element-title">
