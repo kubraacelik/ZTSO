@@ -5,6 +5,7 @@ import SlideMenu from "../components/SlideMenu";
 import Announcements from "../components/Announcements";
 import Tenders from "../components/Tenders";
 import Classifieds from "../components/Classifieds";
+import OwlCarouselSlider from "../components/OwlCarouselSlider";
 
 export const AnaSayfa = () => {
   return (
@@ -15,6 +16,7 @@ export const AnaSayfa = () => {
       <Announcements />
       <Tenders />
       <Classifieds />
+      <OwlCarouselSlider />
     </div>
   );
 };

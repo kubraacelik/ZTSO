@@ -1,0 +1,23 @@
+.owlCarousel-wrapper{
+    width: 100%;
+}
+
+.owlCarousel-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.owlCarousel-card{
+line-height: 250px;
+text-align: center;
+color: #fff;
+font-size: 50px;
+font-weight: 600;
+margin: 20px 0;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.owlCarousel-container .card1{
+    background-color: #F4D03F;
+}
