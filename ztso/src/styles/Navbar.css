@@ -1,6 +1,13 @@
 .containerDiv {
     width: 100%;
-    height: 10%;
+    height: auto;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header1 {
@@ -55,12 +62,12 @@
     margin-right: 12px;
 }
 
-.social-media-icon{
+.social-media-icon {
     color: black;
     font-size: 22px;
 }
 
-.social-media-icon:hover{
+.social-media-icon:hover {
     font-size: 24px;
 }
 
@@ -78,10 +85,10 @@
     border-radius: 40px;
     background-color: #005795;
     height: 30px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
-.search-main .tbox-search{
+.search-main .tbox-search {
     float: left;
     background: none;
     border: none;
@@ -92,7 +99,7 @@
     transition: 1s;
 }
 
-.search-main .btn-search{
+.search-main .btn-search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +111,7 @@
     border-radius: 30px;
 }
 
-.search-main:hover > .tbox-search{
+.search-main:hover > .tbox-search {
     width: 150px;
 }
 
@@ -113,6 +120,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #005795;
+    margin-top: 50px; 
 }
 
 .header2 .navs {
@@ -144,4 +152,8 @@
 
 .logoContainer img {
     width: 90%;
+}
+
+body {
+    margin-top: 190px;
 }

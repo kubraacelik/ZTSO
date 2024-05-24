@@ -1,0 +1,57 @@
+.homegrid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; 
+}
+
+.homegrid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.homegrid-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homegrid-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homegrid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; 
+    height: 150px; 
+    margin: 20px;
+    border: 10px solid #005795;
+    border-radius: 50%;
+    color: #005795; 
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.5s ease, font-size 0.5s ease, color 0.5s ease;
+}
+
+.homegrid-item a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.homegrid-item:hover {
+    background-color: #005795; 
+    cursor: pointer;
+}
+
+.homegrid-item:hover a {
+    color: #ffffff; 
+    font-size: 23px; 
+}

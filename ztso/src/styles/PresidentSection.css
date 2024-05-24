@@ -1,0 +1,33 @@
+.president-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.president-section {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    background: #E5E7E9;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.president-img img {
+    width: 500px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.president-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.president-info p{
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 20px 0;
+}

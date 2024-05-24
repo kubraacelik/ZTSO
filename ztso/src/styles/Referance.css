@@ -1,0 +1,29 @@
+.referance-wrapper {
+    padding: 20px;
+  }
+  
+  .referance-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .referance-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .referance-item {
+    flex: 0 0 20%; 
+    max-width: 11%;
+  }
+  
+  .referance-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import "../styles/Slider.css";
 import Slider1 from "../assets/slider1.png";
 import Slider2 from "../assets/slider2.jpg";
@@ -20,32 +20,37 @@ function Slider() {
   const slides = [Slider1, Slider2, Slider3, Slider4, Slider5];
 
   return (
-    <>
-      <div className="slider">
-        <div className="list">
-          {slides.map((slide, index) => (
-            <div key={index} className={index === currentSlide ? "item active" : "item"}>
-             <div className='slide-img'>
-             <img src={slide} alt="" />
-             </div>
-              <div className="content">
-                <p>Design</p>
-                <h2>Slider {index + 1}</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                  sapiente, assumenda autem magnam ipsam laboriosam!
-                </p>
-              </div>
+    <div className="slider">
+      <div className="list">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={index === currentSlide ? "item active" : "item"}
+          >
+            <div className="slide-img">
+              <img src={slide} alt="" />
             </div>
-          ))}
-          {/* buttons */}
-          <div className="arrows">
-            <button id="prev" onClick={prevSlide}>&lt;</button>
-            <button id="next" onClick={nextSlide}>&gt;</button>
+            <div className="content">
+              <p>Design</p>
+              <h2>Slider {index + 1}</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                sapiente, assumenda autem magnam ipsam laboriosam!
+              </p>
+            </div>
           </div>
+        ))}
+        {/* buttons */}
+        <div className="arrows">
+          <button id="prev" onClick={prevSlide}>
+            &lt;
+          </button>
+          <button id="next" onClick={nextSlide}>
+            &gt;
+          </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

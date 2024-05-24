@@ -1,0 +1,126 @@
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: url(../assets/zonguldak-bg.jpg); 
+    background-size: cover;
+    height: 90vh;
+  }
+  
+  .contact-content {
+    position: relative;     
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1; 
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .contactInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactInfo-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contactInfo-icon {
+    font-size: 25px;
+    margin-right: 15px;
+    color: #005795;
+  }
+  
+  .contactInfo-text p {
+    margin: 0;
+    font-size: 17px;
+    color: #333;
+  }
+  
+  .contactForm {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  
+  .contactForm-inputBox {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .contactForm-inputBox input,
+  .contactForm-inputBox textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+  }
+  
+  .contactForm-inputBox span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #827d7d;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .contactForm-inputBox input:focus ~ span,
+  .contactForm-inputBox textarea:focus ~ span,
+  .contactForm-inputBox input:valid ~ span,
+  .contactForm-inputBox textarea:valid ~ span {
+    top: -10px;
+    left: 10px;
+    color: #005795;
+    font-size: 15px;
+  }
+  
+  .contactForm-inputBox textarea {
+    height: 100px;
+  }
+  
+  .contactForm-inputBox input[type="submit"] {
+    background-color: #005795;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactForm-inputBox input[type="submit"]:hover {
+    background-color: #1A5276;
+  }
+  

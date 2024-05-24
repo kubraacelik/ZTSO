@@ -2,8 +2,7 @@ import "../styles/SlideMenu.css";
 
 function SlideMenu() {
   return (
-    <>
-      <div className="slideMenuContainer">
+    <div className="slideMenuContainer">
         <div className="slideMenu">
           <div className="slideMenu-list">
             <button className="slideMenu-item">
@@ -64,7 +63,6 @@ function SlideMenu() {
           </div>
         </div>
       </div>
-    </>
   );
 }
 

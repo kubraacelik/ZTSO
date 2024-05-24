@@ -35,8 +35,7 @@ function Announcements() {
   };
 
   return (
-    <>
-      <div className="announcements-container">
+    <div className="announcements-container">
         <div className="announcements-wrapper">
           <div className="announcements-top">
             <div className="announcements-img">
@@ -193,7 +192,6 @@ function Announcements() {
           </div>
         </div>
       </div>
-    </>
   );
 }
 

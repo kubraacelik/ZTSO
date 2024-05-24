@@ -41,7 +41,6 @@ function OwlCarouselSlider() {
   }, []);
 
   return (
-    <>
       <div className="owlCarousel-wrapper">
         <div className="owlCarousel-container owl-carousel">
           <div className="owlCarousel-card card-1">
@@ -217,7 +216,6 @@ function OwlCarouselSlider() {
           </div>
         </div>
       </div>
-    </>
   );
 }
 

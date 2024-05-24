@@ -4,11 +4,9 @@ import { AnaSayfa } from "./routes/AnaSayfa";
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<AnaSayfa />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<AnaSayfa />} />
+    </Routes>
   );
 }
 
