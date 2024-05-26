@@ -13,14 +13,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-bottom: 20px;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
 .footer-top-item {
-    flex: 1;
+    margin-left: 20px;
+    margin-right: 175px;
     text-align: center;
-    padding: 10px ;
+    padding: 10px;
     font-size: 20px;
     font-weight: bold;
     color: #fff;
@@ -28,7 +29,7 @@
 }
 
 .footer-body {
-    padding: 0 20px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -38,7 +39,7 @@
     flex: 1;
     list-style: none;
     padding: 0;
-    margin: 0 20px;
+    margin: 0 10px; 
 }
 
 .footer-body-menu-item {
