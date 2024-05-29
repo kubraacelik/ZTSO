@@ -157,3 +157,12 @@
 body {
     margin-top: 190px;
 }
+
+.header2-end a img{
+    width: 100px;
+    transition: filter 0.3s;
+}
+
+.header2-end a img:hover{
+    filter: brightness(1.2);
+}

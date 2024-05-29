@@ -19,7 +19,7 @@
 
 .footer-top-item {
     margin-left: 20px;
-    margin-right: 175px;
+    margin-right: 95px;
     text-align: center;
     padding: 10px;
     font-size: 20px;
@@ -57,6 +57,53 @@
 
 .footer-body-menu-item a:hover {
     color: thistle;
+}
+
+.footer-end{
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+}
+
+.footer-end p{
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer-body-right img{
+    width: 300px;
+}
+
+.footer-body-right p{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 10px 80px;
+    text-align: center;
+}
+
+.footer-body-right .footer-social-media {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-body-right .footer-social-media-list {
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.footer-body-right .footer-social-media-icon {
+    color: #fff;
+    font-size: 22px;
+}
+
+.footer-body-right .footer-social-media-icon:hover {
+    font-size: 24px;
 }
 
 @media (max-width: 768px) {

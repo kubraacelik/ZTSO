@@ -2,6 +2,8 @@ import logo from "../assets/zonguldak-logo.png";
 import "../styles/Navbar.css";
 import { FaFacebook, FaInstagram, FaYoutubeSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import  Header2Logo  from "../assets/headerlogo2.png";
+import  CClogo  from "../assets/CCIOT.png";
 
 function Navbar() {
   return (
@@ -31,10 +33,7 @@ function Navbar() {
           </div>
           <div className="social-media">
             <div className="social-media-list">
-              <a
-                href="https://www.facebook.com/ztsokurumsal/"
-                target="_blank"
-              >
+              <a href="https://www.facebook.com/ztsokurumsal/" target="_blank">
                 <FaFacebook className="social-media-icon" />
               </a>
             </div>
@@ -96,6 +95,14 @@ function Navbar() {
           <div className="navs-item">
             <a href="#">BİZE ULAŞIN</a>
           </div>
+        </div>
+        <div className="header2-end">
+          <a href="https://ztso.org.tr/icerik/informationen-fur-b2b-aktivitaten-b2b-etkinligi-icin-bilgiler">
+            <img src={Header2Logo} alt="" />
+          </a>
+          <a href="https://cciot-edu.eu/tr/">
+            <img src={CClogo} alt="" />
+          </a>
         </div>
       </div>
     </div>
