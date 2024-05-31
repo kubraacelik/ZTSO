@@ -1,36 +1,62 @@
+import { Link } from "react-router-dom";
 import "../styles/Homegrid.css";
 
 function Homegrid() {
+  const handleLinkClick = (event, url) => {
+    event.preventDefault();
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="homegrid-wrapper">
       <div className="homegrid-container">
         <div className="homegrid-list">
           <div className="homegrid-items">
             <div className="homegrid-item">
-              <a
-                href="https://www.ztso.org.tr/proje-kategori/projelerimiz"
-                target="_blank"
+              <Link
+                to="/projeler"
+                onClick={(event) =>
+                  handleLinkClick(event, `${window.location.origin}/projeler`)
+                }
               >
                 PROJELER
-              </a>
+              </Link>
             </div>
             <div className="homegrid-item">
-              <a
-                href="https://www.ztso.org.tr/proje-kategori/raporlar"
-                target="_blank"
+              <Link
+                to="/raporlar"
+                onClick={(event) =>
+                  handleLinkClick(event, `${window.location.origin}/raporlar`)
+                }
               >
                 RAPORLAR
-              </a>
+              </Link>
             </div>
             <div className="homegrid-item">
-              <a href="https://www.ztso.org.tr/video-galeri" target="_blank">
+              <Link
+                to="/raporlar"
+                onClick={(event) =>
+                  handleLinkClick(
+                    event,
+                    `${window.location.origin}/video-galeri`
+                  )
+                }
+              >
                 VİDEO GALERİSİ
-              </a>
+              </Link>
             </div>
             <div className="homegrid-item">
-              <a href="https://www.ztso.org.tr/foto-galeri" target="_blank">
+              <Link
+                to="/raporlar"
+                onClick={(event) =>
+                  handleLinkClick(
+                    event,
+                    `${window.location.origin}/foto-galeri`
+                  )
+                }
+              >
                 FOTOĞRAF GALERİSİ
-              </a>
+              </Link>
             </div>
           </div>
         </div>

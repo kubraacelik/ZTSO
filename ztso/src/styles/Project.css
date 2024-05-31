@@ -1,0 +1,264 @@
+.project-wrapper {
+    display: flex;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.project-left {
+    flex: 0 0 30%;
+}
+
+.project-container {
+    flex: 0 0 70%;
+    max-width: 1200px;
+}
+
+.project-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-title p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-img img {
+    max-width: 100%;
+    max-height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-desc {
+    padding: 16px;
+    text-align: center;
+}
+
+.project-desc p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-button {
+    padding: 17px 25px;
+    margin: 0 5px;
+    border-radius: 50px;
+    background-color: #f4f4f4;
+    color: #0056b3;
+    border: 1px solid #0056b3;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-button:hover {
+    background-color: #0056b3;
+    color: #f4f4f4;
+}
+
+.page-button.active {
+    background-color: #0056b3;
+    color: #f4f4f4;
+    border: none;
+}
+
+/* Sol panel stilleri */
+.easy-menu,
+.project-social-media {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.easy-menu-title,
+.project-social-media-title {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #005795;
+    padding: 10px;
+    color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.easy-menu-title p,
+.project-social-media-title p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.easy-menu-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.easy-menu-item {
+    position: relative;
+    padding: 5px;
+}
+
+.easy-menu-item:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.4s, border-radius 0.3s;
+}
+
+.easy-menu-item a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.easy-menu-item:hover a {
+    color: white;
+}
+
+/* Çizgi Stili */
+.easy-menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.project-social-media {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.project-social-media-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-social-media-icon {
+    font-size: 27px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.project-social-media-icon:hover {
+    color: #0056b3;
+}
+
+.project-events-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.project-calendar {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fc .fc-toolbar {
+    background-color: #005795;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 10px;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.fc .fc-button {
+    background-color: #e9ecef;
+    color: #005795;
+    border: 1px solid #005795;
+    border-radius: 4px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.fc .fc-button:hover {
+    background-color: #005795;
+    color: #e9ecef;
+}
+
+.fc .fc-button:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+}
+
+.fc .fc-daygrid-day-number {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.fc .fc-daygrid-day {
+    transition: background-color 0.3s;
+}
+
+.fc .fc-daygrid-day:hover {
+    background-color: #f1f1f1;
+}
+
+.fc .fc-day-today {
+    background-color: #e9f7ff;
+}
+
+.fc .fc-event {
+    background-color: #005795;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+}
+
+.fc .fc-event:hover {
+    background-color: #004080;
+}
