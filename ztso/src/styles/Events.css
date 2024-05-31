@@ -1,0 +1,88 @@
+.events-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 70%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .events-container p {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+.fc {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 90%;
+  }
+  
+  .fc .fc-toolbar {
+    background-color: #005795;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 10px;
+  }
+  
+  .fc .fc-toolbar-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .fc .fc-button {
+    background-color: #e9ecef;
+    color: #005795;
+    border: 1px solid #005795;
+    border-radius: 4px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .fc .fc-button:hover {
+    background-color: #005795;
+    color: #e9ecef;
+  }
+  
+  .fc .fc-button:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+  }
+  
+  .fc .fc-daygrid-day-number {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .fc .fc-daygrid-day {
+    transition: background-color 0.3s;
+  }
+  
+  .fc .fc-daygrid-day:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .fc .fc-day-today {
+    background-color: #e9f7ff;
+  }
+  
+  .fc .fc-event {
+    background-color: #005795;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+  }
+  
+  .fc .fc-event:hover {
+    background-color: #005795;
+  }
+  

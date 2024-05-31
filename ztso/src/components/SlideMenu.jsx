@@ -1,8 +1,33 @@
 import "../styles/SlideMenu.css";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import interactionPlugin from "@fullcalendar/interaction";
+import trLocale from "@fullcalendar/core/locales/tr";
+import "../styles/Events.css";
+import planner from "../assets/calendar.png";
 
 function SlideMenu() {
   return (
-    <div className="slideMenuContainer">
+    <div className="container">
+      <div className="events-container">
+        <div className="planner">
+          <img src={planner} alt="" />
+          <p>Etkinlikler</p>
+        </div>
+        <FullCalendar
+          plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+          initialView="dayGridMonth"
+          headerToolbar={{
+            start: "today",
+            center: "title",
+            end: "prev,next",
+          }}
+          height="60vh"
+          locale={trLocale}
+        />
+      </div>
+      <div className="slideMenuContainer">
         <div className="slideMenu">
           <div className="slideMenu-list">
             <button className="slideMenu-item">
@@ -63,6 +88,7 @@ function SlideMenu() {
           </div>
         </div>
       </div>
+    </div>
   );
 }
 
